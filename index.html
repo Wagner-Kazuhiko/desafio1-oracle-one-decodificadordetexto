@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+       <img class="logo" src="assets/img/Logo.png" alt="logotipo Alura">
+    </header>
+    <main class="principal">
+        <section class="container-texto">
+            <textarea class="texto" placeholder="Digite seu texto" rows="5" cols="30" maxlength="100" wrap="hard"></textarea>
+        </section>
+        <div class="container-void">
+
+        </div>
+        <section class="container-botoes">
+            <div class="container-mensagem-validacao">
+                <img src="assets/img/Exclamacao.svg" alt="exclamação"> 
+                <span>Apenas letras minúsculas e sem acento. Limite de 100 caracteres.</span>
+            </div>
+            <button class="criptografar" type="submit" onclick="exibirCriptografia()">Criptografar</button>
+            <button class="descriptografar" type="submit" onclick="exibirTextoDescriptografado()">Descriptografar</button>
+        </section>
+        <aside class="container-retangulo">
+            <div id="container-mensagem-erro">
+                <img class="imagem-menino" src="assets/img/Vetor.png" alt="nenhuma mensagem encontrada">
+                <div class="container-paragrafo">
+                    <p class="paragrafo1">Nenhuma mensagem encontrada</p>
+                    <p class="paragrafo2">Digite um texto que você deseja criptografar ou descriptografar</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-paragrafo">Desenvolvido por <a href="https://www.linkedin.com/in/wagner-kazuhiko-kumagai-ba8b01177/">Kazu</a></p>
+    </footer>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
